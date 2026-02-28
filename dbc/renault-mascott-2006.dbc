@@ -40,16 +40,29 @@ BO_ 2147485542 Vector__XXXMsg352: 8 Vector__XXX
    SG_ cluster_backlight : 2|1@0+ (1,0) [0|1] "" Vector__XXX
    SG_ left_turn_signal_status : 60|1@0+ (1,0) [0|1] "" Vector__XXX
    SG_ right_turn_signal_status : 61|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ wipers_speed_level : 23|2@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147484090 Vector__XXXMsg327: 6 Vector__XXX
    SG_ clutch_pedal_status : 35|1@0+ (1,0) [0|1] "" Vector__XXX
    SG_ accelerator_pedal_value : 7|8@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147483906 Vector__XXXMsg339: 3 Vector__XXX
-   SG_ break_pedal_status : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ brake_pedal_status : 16|1@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147485505 Msg372: 6 Vector__XXX
-   SG_ break_pedal_status : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ brake_pedal_status : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147485457 Vector__XXXMsg99: 8 Vector__XXX
+   SG_ parking_brake_status : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483898 Msg347: 3 Vector__XXX
+   SG_ brake_pedal_status : 38|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ accelerator_pedal_fully_pessed : 56|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ accelerator_pedal_unknown_1 : 31|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ accelerator_pedal_unknown_2 : 55|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483905 Msg39: 3 Vector__XXX
+   SG_ brake_pedal_status : 53|1@0+ (1,0) [0|1] "" Vector__XXX
 
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
@@ -59,3 +72,4 @@ BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
 BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
 BA_DEF_DEF_ "matchingcriteria" 0;
 BA_DEF_DEF_ "filterlabeling" 0;
+BA_ "GenMsgForegroundColor" BO_ 2147485457 "#000000";
