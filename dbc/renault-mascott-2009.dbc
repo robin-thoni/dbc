@@ -34,7 +34,7 @@ NS_ :
 BS_: 
 BU_: 
 BO_ 2147485649 odometer: 7 Vector__XXX
-   SG_ odometer : 7|24@0+ (1,0) [0|4e+06] "" Vector__XXX
+   SG_ odometer_value : 7|24@0+ (1,0) [0|4e+06] "" Vector__XXX
 
 BO_ 2147485542 Vector__XXXMsg352: 8 Vector__XXX
    SG_ cluster_backlight : 2|1@0+ (1,0) [0|1] "" Vector__XXX
@@ -54,6 +54,7 @@ BO_ 2147485505 Msg372: 6 Vector__XXX
 
 BO_ 2147485457 Vector__XXXMsg99: 8 Vector__XXX
    SG_ parking_brake_status : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ odometer_value : 15|24@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147483898 Msg347: 3 Vector__XXX
    SG_ brake_pedal_status : 38|1@0+ (1,0) [0|1] "" Vector__XXX
@@ -64,12 +65,19 @@ BO_ 2147483898 Msg347: 3 Vector__XXX
 BO_ 2147483905 Msg39: 3 Vector__XXX
    SG_ brake_pedal_status : 53|1@0+ (1,0) [0|1] "" Vector__XXX
 
+BO_ 513 Vector__XXXMsg278: 8 Vector__XXX
+   SG_ counter_unkown_1 : 55|8@0+ (1,0) [0|1] "" Vector__XXX
+
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
 BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
 BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
+BA_DEF_DEF_ "matchingcriteria" 0;
+BA_DEF_DEF_ "filterlabeling" 0;
 BA_DEF_DEF_ "matchingcriteria" 0;
 BA_DEF_DEF_ "filterlabeling" 0;
 BA_ "GenMsgForegroundColor" BO_ 2147485457 "#000000";
