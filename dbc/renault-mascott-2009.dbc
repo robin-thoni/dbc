@@ -56,13 +56,13 @@ BO_ 2147485457 Vector__XXXMsg99: 8 Vector__XXX
    SG_ parking_brake_status : 2|1@0+ (1,0) [0|1] "" Vector__XXX
    SG_ odometer_value : 15|24@0+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 2147483898 Msg347: 3 Vector__XXX
+BO_ 2147483898 Msg347: 8 Vector__XXX
    SG_ brake_pedal_status : 38|1@0+ (1,0) [0|1] "" Vector__XXX
    SG_ accelerator_pedal_fully_pessed : 56|1@0+ (1,0) [0|1] "" Vector__XXX
    SG_ accelerator_pedal_unknown_1 : 31|8@0+ (1,0) [0|1] "" Vector__XXX
    SG_ accelerator_pedal_unknown_2 : 55|8@0+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 2147483905 Msg39: 3 Vector__XXX
+BO_ 2147483905 Msg39: 8 Vector__XXX
    SG_ brake_pedal_status : 53|1@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 513 Vector__XXXMsg278: 8 Vector__XXX
@@ -70,6 +70,8 @@ BO_ 513 Vector__XXXMsg278: 8 Vector__XXX
 
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
 BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
